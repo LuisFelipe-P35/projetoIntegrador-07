@@ -26,8 +26,9 @@ public class Produto {
 	@NotNull
 	private double preco;
 	
-	@NotNull
-	private double estoque;
+	private double qtd_estoque;
+	
+	private double peso;
 	
 	@NotNull
 	@Size(min = 2,max = 1000)
@@ -61,12 +62,12 @@ public class Produto {
 		this.preco = preco;
 	}
 
-	public double getEstoque() {
-		return estoque;
+	public double getQtd_estoque() {
+		return qtd_estoque;
 	}
 
-	public void setEstoque(double estoque) {
-		this.estoque = estoque;
+	public void setQtd_estoque(double qtd_estoque) {
+		this.qtd_estoque = qtd_estoque;
 	}
 
 	public String getDescricao() {
@@ -83,6 +84,14 @@ public class Produto {
 
 	public void setCategoria(Categoria categoria) {
 		this.categoria = categoria;
+	}
+
+	public double getPeso() {
+		return peso;
+	}
+
+	public void setPeso(double peso) {
+		this.peso = peso;
 	}
 
 }
