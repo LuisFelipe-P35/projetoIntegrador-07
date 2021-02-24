@@ -20,13 +20,13 @@ public class Usuario {
 	@NotNull
 	@Size(min=2, max=100)
 	private String nome;
-
+	
 	@NotNull
 	@Size(min=2, max=100)
 	private String email;
 	
 	@NotNull
-	@Size(min=4,max=16)
+	@Size(min=4,max=100)
 	private String senha;
 	
 	
