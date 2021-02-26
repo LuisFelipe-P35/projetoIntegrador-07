@@ -1,6 +1,7 @@
 import {HttpClientModule} from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HashLocationStrategy, LocationStrategy} from '@angular/common' ;
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +12,11 @@ import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { CategoriaComponent } from './categoria/categoria.component';
+import { ContatoComponent } from './contato/contato.component';
+import { ServicosComponent } from './servicos/servicos.component';
+import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
+import { CadastroProdutoComponent } from './cadastro-produto/cadastro-produto.component';
+import { EstoqueComponent } from './estoque/estoque.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +26,12 @@ import { CategoriaComponent } from './categoria/categoria.component';
     LoginComponent,
     CadastrarComponent,
     HomeComponent,
-    CategoriaComponent
+    CategoriaComponent,
+    ContatoComponent,
+    ServicosComponent,
+    SobreNosComponent,
+    CadastroProdutoComponent,
+    EstoqueComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +39,10 @@ import { CategoriaComponent } from './categoria/categoria.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [{
+    provide: LocationStrategy, 
+    useClass: HashLocationStrategy
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

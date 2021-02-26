@@ -1,8 +1,8 @@
-.img-bg {
-    min-height: 700px;
-    top: -150px;
-    position: relative;
-    z-index: -1;
-    background-size: cover;
-    background-repeat: no-repeat;
+.bg-navbar{
+    background-color: #0470EE;
 }
+
+.fs-14{
+    font-size: 14pt;
+}
+

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private rouet: Router
+  ) { }
 
   ngOnInit(): void {
+
+    /*if(environment.token == ''){
+      alert('Sua sessão expirou, faça login novamente')
+      this.router.navigate(['/entrar])
+    }*/
+
   }
 
 }

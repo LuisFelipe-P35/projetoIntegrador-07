@@ -3,11 +3,11 @@ import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
 
 @Component({
-  selector: 'app-categoria',
-  templateUrl: './categoria.component.html',
-  styleUrls: ['./categoria.component.css']
+  selector: 'app-estoque',
+  templateUrl: './estoque.component.html',
+  styleUrls: ['./estoque.component.css']
 })
-export class CategoriaComponent implements OnInit {
+export class EstoqueComponent implements OnInit {
 
   constructor(
     private router: Router
